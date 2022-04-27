@@ -5,7 +5,7 @@ from collections import deque
 
 from game import SnakeGameIA, Directionn, Point
 
-
+from model import Linear_QNet, QTrainer
 
 
 MAX_MIMORY=100_00
@@ -20,10 +20,10 @@ class Agent:
 		
 		self.n_games = 0
 		self.epsilon = 0 #randomness
-		self.gamma = 0
+		self.gamma = 0.9
 		self.memory = deque(maxlen=MAX_MIMORY)
-		self.model = None # TODO
-		self.trainer = None #TODO
+		self.model = Linear_QNet(11, 250, 3) # TODO
+		self.trainer = QTrainer(self.model, lr=LR, gamma=self.gamma) #TODO
 
 	def get_state(self, game):
 
@@ -109,7 +109,7 @@ class Agent:
 		else:
 			state_0 = torch.tensor(state, dtype=torch.float)
 
-			prediction = self.model.predict(state_0)
+			prediction = self.model(state_0)
 
 			move = torch.argmax(prediction).item()
 
