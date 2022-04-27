@@ -25,4 +25,4 @@ developed using Pygame: https://www.pygame.org/contribute.html
 ![alt image 2](https://github.com/Abdoelabassi/RL-snake_game/blob/main/screenshots/S2.png?raw=true)
 
 
-from @Python_engineer @FreeCodeCamp
+Thanks to  @Python_engineer , and Thanks a lot to  @FreeCodeCamp Community
