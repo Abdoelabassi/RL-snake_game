@@ -12,7 +12,7 @@ developed using Pygame: https://www.pygame.org/contribute.html
 
 
 ###screenshots
-![alt image 1](https://github.com/Abdoelabassi/RL-snake_game/blob/main/screenshots/S1.png?raw=true)
+![alt image 1](https://github.com/Abdoelabassi/RL-snake_game/blob/main/screenshots/s1.png?raw=true)
 
 ![alt image 2](https://github.com/Abdoelabassi/RL-snake_game/blob/main/screenshots/S2.png?raw=true)
 
