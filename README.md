@@ -4,7 +4,7 @@ Implementing and training a RL model to play a snake game using PyTorch
 
 ##Algorithm :
 
-Q-Learning, from Bellman equation, Q'(s,a)= Q(s,a) + &alhpa;(R(s,a) + &gamma;max(Q(s',a')))
+Q-Learning, from Bellman equation, Q'(s,a)= Q(s,a) + &alpha;(R(s,a) + &gamma;max(Q(s',a')))
 
 Q: Q value
 
